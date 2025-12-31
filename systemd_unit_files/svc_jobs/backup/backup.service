@@ -1,0 +1,7 @@
+# /etc/systemd/system/backup.service
+[Unit]
+Description=Execute the BASH script /root/backup.sh
+
+[Service]
+Type=oneshot
+ExecStart=/root/backup.sh

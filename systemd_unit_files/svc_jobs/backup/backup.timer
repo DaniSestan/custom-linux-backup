@@ -1,0 +1,10 @@
+# /etc/systemd/system/backup.timer
+[Unit]
+Description=Start the Systemd service backup.service every 1-10 minutes
+
+[Timer]
+OnCalendar=*:0/10
+Persistent=true
+
+[Install]
+WantedBy=timers.target
