@@ -1,0 +1,18 @@
+#low - 5 min - 300000 ms
+#Information that offers some context about a backup
+#normal - 10 min - 600000 ms
+#Information about a vulnerability
+#critical - note that critical notifications need to be manually dismissed, there's no need to set any timer
+#Information about a verified threat or any issue preventing a backup
+
+#Backup reminder should be set to low - 300000
+notify-send -t 300000 -u low "<b>Backup Service Job Reminder</b>" "The job is scheduled for <>: 1. The laptop needs to be powered on; 2. If this is a dual-boot system, the OS needs to be running on Linux; 3. The USB needs to be connected to the laptop with enough free space allocated for the backup"
+
+# TODO: modify the editor settings
+# TODO: use the default notif daemon - find out how to clear the notifications on logon screen; if the issue can't be resolved, then use the dunst notif system and include info on the README dependencies, as well as a simple config file for low, normal, and critical settings etc
+notify-send -u low 'test notification' 'test notification message'
+notify-send --urgency low 'test notification' 'test notification message'
+notify-send -u normal 'test notification' 'test notification message'
+notify-send -u critical 'test notification' 'test notification message'
+
+# tab

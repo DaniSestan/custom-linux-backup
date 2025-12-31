@@ -1,0 +1,8 @@
+# /etc/systemd/system/reminder.timer
+[Unit]
+Description=Service job that creates timed reminders the week and day prior to a scheduled backup
+[Timer]
+OnCalendar=*:0/10
+Persistent=true
+[Install]
+WantedBy=timers.target
