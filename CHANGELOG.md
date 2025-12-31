@@ -1,0 +1,9 @@
+# CHANGELOG
+
+### [VERSION #] - [TIMESTAMP]
+
+#### [ADDED || REMOVED || FIXED]
+
+\<DESCRIPTION\>
+
+___
