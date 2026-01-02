@@ -1,5 +1,7 @@
 # /etc/systemd/system/reminder.service
 [Unit]
-Description=Service job that creates timed reminders the week and day prior to a scheduled backup
+Description=Systemd job that creates timed reminders the week and day prior to a scheduled backup
+
 [Service]
-# ExecStart=/usr/bin/backup-reminder.sh /mnt
+Type=oneshot
+ExecStart=/root/reminder.sh

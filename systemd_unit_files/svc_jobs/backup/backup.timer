@@ -1,6 +1,6 @@
 # /etc/systemd/system/backup.timer
 [Unit]
-Description=Start the Systemd service backup.service every 1-10 minutes
+Description=Custom timer that triggers a systemd job to create a custom backup of a Linux OS
 
 [Timer]
 OnCalendar=*:0/10

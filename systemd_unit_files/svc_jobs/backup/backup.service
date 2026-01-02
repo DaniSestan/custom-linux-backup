@@ -1,6 +1,6 @@
 # /etc/systemd/system/backup.service
 [Unit]
-Description=Execute the BASH script /root/backup.sh
+Description=Systemd job that creates a custom backup of a Linux OS
 
 [Service]
 Type=oneshot

@@ -18,3 +18,16 @@ echo "I am a test script executing at $(date)" | tee -a /var/log/systemd/reminde
 # Timing: note that critical notifications need to be manually dismissed, there's no need to set any timer
 # Description: Information about a verified threat or any issue preventing a backup
 # Details: Alerts set to 'high' should be rare: If the data necessary for a backup is not accessible, corrupted or present on the system
+
+
+#!/bin/bash
+current_hour=$(date +%H)
+current_day=$(date +%u)  # 1=Mon, 7=Sun
+
+# Only run if it's Monday and before 09:00
+if [[ "$current_day" -eq 1 && "$current_hour" -lt 9 ]]; then
+    # Run the actual job
+    /usr/local/bin/my-backup.sh
+else
+    echo "Skipping because outside allowed time window."
+fi
