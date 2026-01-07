@@ -2,6 +2,8 @@
 
 # run cmd: sudo bash /home/dani/IdeaProjects/custom-linux-backup/tests/reminder/init_reminder_test.sh
 
+# TODO: error_handling_tools - trap_error_logs when running the backup
+
 #chmod 700 /home/dani/IdeaProjects/custom-linux-backup/error_handling/error_handler.sh
 trap 'source /home/dani/IdeaProjects/custom-linux-backup/error_handling/error_handler.sh "$BASH_COMMAND" "$?"' ERR
 
