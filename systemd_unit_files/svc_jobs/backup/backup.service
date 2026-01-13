@@ -1,4 +1,5 @@
 # /etc/systemd/system/backup.service
+# TODO: backup script should include trash cmd to clear out the archived backups - the backup from the prev month
 [Unit]
 Description=Systemd job that creates a custom backup of a Linux OS
 

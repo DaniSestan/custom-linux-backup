@@ -1,11 +1,10 @@
 #!/bin/bash
 
-# run cmd: sudo bash /home/dani/IdeaProjects/custom-linux-backup/tests/reminder/init_reminder_test.sh
+# TODO: move the init script in the system_d_unit files dir
+source /home/dani/Work/Work-Projects/custom-linux-backup/trap_error_logs/.env
+source $TRAP_ERROR_LOGS_MAIN_EXEC
 
-# TODO: error_handling_tools - trap_error_logs when running the backup
-
-#chmod 700 /home/dani/IdeaProjects/custom-linux-backup/error_handling/error_handler.sh
-trap 'source /home/dani/IdeaProjects/custom-linux-backup/error_handling/error_handler.sh "$BASH_COMMAND" "$?"' ERR
+echo "TRAP_ERROR_LOGS_MAIN_EXEC: $TRAP_ERROR_LOGS_MAIN_EXEC"
 
 unit='reminder'
 line_num='6'
@@ -27,7 +26,6 @@ fi
 # Remove any unit files and systemd exec scripts:
 mkdir -p /tmp/custom-linux-backup
 #install -D /dev/null /var/log/systemd/reminder/error_logs/initialize_systemd_job.log
-# TODO: create an error_handler script
 
 mv /etc/systemd/system/$unit.service.d/override.conf /tmp/custom-linux-backup
 mv /etc/systemd/system/$unit.service /tmp/custom-linux-backup

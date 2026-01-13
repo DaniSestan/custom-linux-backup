@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # TODO: refer to files from blunix tutorial; there's some issue executing script from /usr/bin dir - either mod permissions or run script from diff location
-# run cmd: sudo bash /home/dani/IdeaProjects/custom-linux-backup/tests/backup/init_backup_test.sh
 
 # Change the backup timer sched:
 line_num='6'

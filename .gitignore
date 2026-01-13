@@ -8,7 +8,7 @@ README.md
 # Idea project
 .idea/
 .DS-Store
-web-sauce.iml
+*.iml
 
 # Python-Flask App
 .venv/

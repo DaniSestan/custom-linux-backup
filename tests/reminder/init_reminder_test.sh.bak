@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# run cmd: sudo bash /home/dani/IdeaProjects/custom-linux-backup/tests/reminder/init_reminder_test.sh
-
 line_num='6'
 minutes='1'
 exec_start_cmd='/root/reminder.sh'
