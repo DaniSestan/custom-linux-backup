@@ -1,6 +1,6 @@
 # Credentials files
 changelog_generator.toml
-
+trap_error_logs/.env
 # web-sauce directories/files
 _TMP/
 README.md
