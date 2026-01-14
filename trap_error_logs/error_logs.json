@@ -34,5 +34,50 @@
     "command": "install -D /dev/null /var/log/systemd/reminder/error_logs/initialize_systemd_job.log",
     "error": "install: cannot remove '/var/log/systemd/reminder/error_logs/initialize_systemd_job.log': Permission denied",
     "exit_code": "0"
+  },
+  {
+    "log_index": "5",
+    "timestamp_utc": "2026-01-14 13:46:14.558",
+    "timestamp_local": "2026-01-14 13:46:14.563 CET",
+    "user": "root",
+    "command": "symlink=$(find /etc/systemd/system/timers.target.wants/$unit.timer)",
+    "error": "Continue?",
+    "exit_code": "0"
+  },
+  {
+    "log_index": "6",
+    "timestamp_utc": "2026-01-14 14:18:41.728",
+    "timestamp_local": "2026-01-14 14:18:41.733 CET",
+    "user": "root",
+    "command": "symlink=$(find /etc/systemd/system/timers.target.wants/$unit.timer)",
+    "error": "Continue?",
+    "exit_code": "0"
+  },
+  {
+    "log_index": "7",
+    "timestamp_utc": "2026-01-14 14:23:22.398",
+    "timestamp_local": "2026-01-14 14:23:22.403 CET",
+    "user": "root",
+    "command": "symlink=$(find /etc/systemd/system/timers.target.wants/$unit.timer)",
+    "error": "Continue?",
+    "exit_code": "0"
+  },
+  {
+    "log_index": "8",
+    "timestamp_utc": "2026-01-14 14:41:54.861",
+    "timestamp_local": "2026-01-14 14:41:54.865 CET",
+    "user": "root",
+    "command": "symlink=$(find /etc/systemd/system/timers.target.wants/$unit.timer)",
+    "error": "Continue?",
+    "exit_code": "0"
+  },
+  {
+    "log_index": "9",
+    "timestamp_utc": "2026-01-14 14:45:56.450",
+    "timestamp_local": "2026-01-14 14:45:56.455 CET",
+    "user": "root",
+    "command": "symlink=$(find /etc/systemd/system/timers.target.wants/$unit.timer)",
+    "error": "Continue?",
+    "exit_code": "0"
   }
 ]

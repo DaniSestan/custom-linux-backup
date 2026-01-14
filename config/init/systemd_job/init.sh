@@ -10,7 +10,7 @@ source $TRAP_ERROR_LOGS_MAIN_EXEC
 unit='reminder'
 line_num='6'
 minutes='1'
-exec_start_cmd='/root/reminder.sh'
+exec_start_cmd='/root/backup.sh'
 filename="$project_root/systemd_unit_files/svc_jobs/reminder/$unit.timer"
 sed -i "${line_num}s|.*|OnCalendar=*:0/${minutes}|" "$filename"
 
