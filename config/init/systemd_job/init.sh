@@ -1,3 +1,4 @@
+#!/bin/bash
 
 # Uncomment line to run code-stepping:
 #trap 'echo "[${BASH_SOURCE}:${LINENO}] $BASH_COMMAND" ; read -p "Continue?"' DEBUG

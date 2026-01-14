@@ -1,9 +1,0 @@
-# /etc/systemd/system/reminder.timer
-[Unit]
-Description=Custom timer that triggers a systemd job to create timed reminders the week and day prior to a scheduled backup
-
-[Timer]
-OnCalendar=*:0/1
-
-[Install]
-WantedBy=timers.target

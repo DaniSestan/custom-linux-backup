@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "log_index": "1",
+    "timestamp_utc": "2026-01-13 23:35:01.347",
+    "timestamp_local": "2026-01-13 23:35:01.352 CET",
+    "user": "dani",
+    "command": "symlink=$(find /etc/systemd/system/timers.target.wants/$timer_unit.timer)",
+    "error": "find: ‘/etc/systemd/system/timers.target.wants/reminder.timer’: Permission denied",
+    "exit_code": "0"
+  },
+  {
+    "log_index": "2",
+    "timestamp_utc": "2026-01-13 23:35:01.409",
+    "timestamp_local": "2026-01-13 23:35:01.413 CET",
+    "user": "dani",
+    "command": "install -D /dev/null /var/log/systemd/reminder/error_logs/initialize_systemd_job.log",
+    "error": "install: cannot remove '/var/log/systemd/reminder/error_logs/initialize_systemd_job.log': Permission denied",
+    "exit_code": "0"
+  },
+  {
+    "log_index": "3",
+    "timestamp_utc": "2026-01-14 00:43:39.757",
+    "timestamp_local": "2026-01-14 00:43:39.762 CET",
+    "user": "dani",
+    "command": "symlink=$(find /etc/systemd/system/timers.target.wants/$timer_unit.timer)",
+    "error": "find: ‘/etc/systemd/system/timers.target.wants/reminder.timer’: Permission denied",
+    "exit_code": "0"
+  },
+  {
+    "log_index": "4",
+    "timestamp_utc": "2026-01-14 00:43:39.822",
+    "timestamp_local": "2026-01-14 00:43:39.827 CET",
+    "user": "dani",
+    "command": "install -D /dev/null /var/log/systemd/reminder/error_logs/initialize_systemd_job.log",
+    "error": "install: cannot remove '/var/log/systemd/reminder/error_logs/initialize_systemd_job.log': Permission denied",
+    "exit_code": "0"
+  }
+]

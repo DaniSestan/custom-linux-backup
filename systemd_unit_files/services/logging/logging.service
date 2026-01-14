@@ -5,4 +5,4 @@ Description=Systemd job that creates timed reminders the week and day prior to a
 
 [Service]
 Type=oneshot
-ExecStart=/root/reminder.sh
+ExecStart=/root/logging.sh

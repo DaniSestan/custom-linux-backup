@@ -1,7 +1,7 @@
 #!/bin/bash
 
 mkdir -p /var/log/systemd/reminder/
-echo "testing I am a test script executing at $(date)" | tee -a /var/log/systemd/reminder/reminder.log
+echo "I am a test script executing at $(date)" | tee -a /var/log/systemd/reminder/reminder.log
 
 # TODO: create a reminder script that can be exec'd from the timed systemd reminder job
 # Setting: low
